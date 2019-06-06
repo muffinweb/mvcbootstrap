@@ -9,6 +9,9 @@
  * @version 1.0.0
  */
 
+/** Composer Autoloader */
+require '../vendor/autoload.php';
+
 /** Packages & Frameworks */
 require '../packages/Medoo.php';
 require '../packages/Csrf.php';
