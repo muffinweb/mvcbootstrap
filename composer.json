@@ -9,5 +9,8 @@
             "email": "ugurcengiz@mail.com.tr"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "require": {
+        "rathouz/text-image": "^2.0"
+    }
 }
