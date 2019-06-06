@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^mvcbootstrap.io$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.mvcbootstrap.io$
+RewriteCond %{REQUEST_URI} !public/
+RewriteRule (.*) /public/$1 [L]
