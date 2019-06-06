@@ -9,5 +9,6 @@
             "email": "ugurcengiz@mail.com.tr"
         }
     ],
+    "minimum-stability": "dev",
     "require": {}
 }
