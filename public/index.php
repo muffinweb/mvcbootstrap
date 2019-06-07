@@ -12,9 +12,12 @@
 /** Composer Autoloader */
 require '../vendor/autoload.php';
 
-/** Packages & Frameworks */
+/** Manuel Packages & Frameworks */
 require '../packages/Medoo.php';
 require '../packages/Csrf.php';
+
+/** Helpers */
+require "../vendor/larapack/dd/src/helper.php";
 
 /** Error show enabled */
 ini_set('display_errors', 1);
