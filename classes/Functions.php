@@ -68,7 +68,7 @@ function partial($source, $payload = []){
   * @return boolean
   */
  function requestRequires($fields, $request){
- 	return !array_diff(array_flip($request), $fields);
+ 	return !array_diff_key(array_flip($fields), $request);
  }
 
  /**

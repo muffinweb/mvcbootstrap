@@ -1,5 +1,5 @@
 {
-    "name": "muffinweb/mvcbootstrap",
+    "name": "ugrcngz35/mvcbootstrap",
     "description": "Simple MVC Framework by Ugur Cengiz",
     "type": "project",
     "license": "MIT",
@@ -10,8 +10,11 @@
         }
     ],
     "minimum-stability": "dev",
+    "config": {
+        "preferred-install": "source"
+    },
     "require": {
         "rathouz/text-image": "^2.0",
-        "larapack/dd": "~1.1"
+        "larapack/dd": "~1.1",
     }
 }

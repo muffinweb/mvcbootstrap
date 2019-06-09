@@ -48,7 +48,7 @@ class Model
 	/**
 	 * Config Lister from SQL formatted array
 	 *
-	 * @param $config, $optionName, $optionValue
+	 * @param $config|array, $optionName|string, $optionValue|string
 	 * @return array
 	 */
 	public function getConfig($config, $optionName, $optionValue)
