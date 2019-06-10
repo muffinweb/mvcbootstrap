@@ -9,12 +9,9 @@
             "email": "ugurcengiz@mail.com.tr"
         }
     ],
-    "minimum-stability": "dev-master",
-    "config": {
-        "preferred-install": "source"
-    },
+    "minimum-stability": "dev",
     "require": {
-        "php": ">=5.6",
+        "php": ">=7.0",
         "rathouz/text-image": "^2.0",
         "larapack/dd": "~1.1"
     }
