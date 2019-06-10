@@ -9,7 +9,7 @@
             "email": "ugurcengiz@mail.com.tr"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "dev-master",
     "config": {
         "preferred-install": "source"
     },
