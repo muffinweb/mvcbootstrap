@@ -15,6 +15,6 @@
     },
     "require": {
         "rathouz/text-image": "^2.0",
-        "larapack/dd": "~1.1",
+        "larapack/dd": "~1.1"
     }
 }
