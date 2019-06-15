@@ -90,7 +90,7 @@
 
 		.code{
 		display: inline-block;
-		margin-left: -30px;
+		margin-left: -18px;
 		}
 	</style>
 </head>
@@ -122,8 +122,9 @@
 
 	<script>
 	var options = {
-	strings: ["Uncomment Line14", " public/index.php", "composer update"],
-	typeSpeed: 40
+	strings: ["Uncomment Line 14.", " public/index.php", "composer update"],
+	typeSpeed: 40,
+	loop: true
 	}
 
 	var typed = new Typed(".code", options);
