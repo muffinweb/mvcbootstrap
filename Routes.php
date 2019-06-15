@@ -7,15 +7,11 @@
 
 // Route::set('special', function ($args = []) {
 //  ♥ Code here ♥
-// 	Route::loadview('specialview');
+// 	Route::loadview('viewtarget');
 // });
 
-Route::set('hakkimizda', function ($args = []) {
-    Route::loadview('hakkimizda');
-});
-
-Route::set('myproject', function($args = []){
-	echo 'MY PROJECT VIEW BURAYA GELCEK';
+Route::set('static', function () {
+    echo 'Code ♥';
 });
 
  /*
@@ -30,6 +26,7 @@ Route::set('myproject', function($args = []){
 Route::handleURI();
 
 
+/** Uncomment below & comment others to preview URI Request Pattern */
 //Route::listRoutes();
 
 ?>

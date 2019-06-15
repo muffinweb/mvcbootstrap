@@ -11,7 +11,7 @@
 
 
 /** Composer Autoloader */
-require '../vendor/autoload.php';
+//require '../vendor/autoload.php';
 
 /** Manuel Packages & Frameworks */
 require '../packages/Medoo.php';
@@ -27,7 +27,9 @@ error_reporting(E_ALL);
 spl_autoload_register(function($class){
 	if(file_exists("../models/" . $class . ".php")){
 		require "../models/" . $class . ".php";
-	} else if(file_exists("../controllers/" . $class . ".php")){
+	} else if(file_exists("../interfaces/" . $class . ".php")){
+		require "../interfaces/" . $class . ".php";
+	}else if(file_exists("../controllers/" . $class . ".php")){
 		require "../controllers/" . $class . ".php";
 	} else if(file_exists("../classes/" . $class . ".php")){
 		require "../classes/" . $class . ".php";

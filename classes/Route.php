@@ -8,6 +8,7 @@ class Route extends Controller
 	 * Route setter function 
 	 * 
 	 * @param  $route, $function, $paramsEnabled
+	 * @static
 	 */
 	public static function set($route, $function, $paramsEnabled = false)
 	{
@@ -45,14 +46,14 @@ class Route extends Controller
 	 */
 	public static function listRoutes()
 	{
-		header('Content-type: application/json');
+		//header('Content-type: application/json');
 		$validRoutes = array_merge(self::$validRoutes, ['uri' => $_GET['url']]);
 		$json = json_encode($validRoutes);
-		echo $json;
+		dd($json);
 	}
 
 	/**
-	 * Exceptions that class will not execute any method, only arguments
+	 * Exceptions that class will not execute any method but index, only arguments
 	 * @return array
 	 */
 	public static $NonAction = [
@@ -133,7 +134,7 @@ class Route extends Controller
 
 	 	/** Runs Output with Request URI */
 	 	if(!in_array($request, self::$validRoutes)){
-			 @call_user_func_array([new $class, $method], $params);
+			 call_user_func_array([new $class, $method], $params);
 	 	}
 	 }
 

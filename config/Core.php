@@ -23,7 +23,7 @@ if(MYSQL_ENABLED):
 	define('SQLHOST', 'localhost');
 	define('SQLUSER', 'root');
 	define('SQLPASS', '');
-	define('SQLDATABASE', '');
+	define('SQLDATABASE', 'databasename_here');
 	define('SQLCHARSET', 'utf8mb4');
 	define('SQLCOLLATION', 'utf8mb4_general_ci');
 endif;

@@ -14,7 +14,9 @@
         "preferred-install": "source"
     },
     "require": {
+        "php": ">=7.0",
         "rathouz/text-image": "^2.0",
         "larapack/dd": "~1.1",
+        "catfan/Medoo": "~1.6.1"
     }
 }

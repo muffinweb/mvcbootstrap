@@ -4,15 +4,32 @@
 class Controller extends Model
 {
 
-	public static function loadview($view, $payload = []){
+	public static function loadview($view, $payload = [], $extractEnabled = false){
 		if(file_exists("../views/" . $view . ".php")){
+			
+			//Extract Payload to variables
+			if($extractEnabled)
+				extract($payload);
+			
 			require "../views/" . $view . ".php";
 		}
 	}
 
-	public function view($view, $payload = []){
+	/**
+	 * View Loader From Viewbase
+	 * 
+	 * @param $view
+	 * @param $payload | Array
+	 * @param $extractEnabled | Boolean
+	 */
+	public function view($view, $payload = [], $extractEnabled = false){
 		$view = strtr($view, '.', '/');
 		if(file_exists("../views/" . $view . ".php")){
+			
+			//Extract Payload to variables
+			if($extractEnabled)
+				extract($payload);
+			
 			require "../views/" . $view . ".php";
 		}
 	}
