@@ -14,7 +14,6 @@
 //require '../vendor/autoload.php';
 
 /** Manuel Packages & Frameworks */
-require '../packages/Medoo.php';
 require '../packages/Csrf.php';
 
 /** Error show enabled */
