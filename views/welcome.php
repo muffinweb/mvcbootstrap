@@ -122,7 +122,7 @@
 
 	<script>
 	var options = {
-	strings: ["Uncomment Line 14.", " public/index.php", "composer update"],
+	strings: ["Uncomment Line 14", " public/index.php", "composer update"],
 	typeSpeed: 40,
 	loop: true
 	}

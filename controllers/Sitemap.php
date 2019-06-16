@@ -7,6 +7,8 @@ class Sitemap extends Controller
 {
 	public function index()
 	{
+		
+		//EXAMPLE
 		header('Content-type: application/xml; charset=utf-8');
 
 		$sitemap = '<?xml version="1.0" encoding="UTF-8"?>

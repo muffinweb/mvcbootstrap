@@ -76,30 +76,10 @@ class Model
 		return false;
 	}
 
-	/** 
-	 * Get name, surname of auth
-	 * @todo nothing
-	*/
-	public function getNameSurname()
-	{
-		$nameSurname = $this->medoo->select("users", [
-			"name",
-			"surname"
-		], [
-			'username' => $_SESSION['auth']['username']
-		]);
-		return (object) $nameSurname[0];
-	}
-
-	public function getUsernameById($id = null)
-	{
-		if($id != null) {
-			return $this->medoo->select("users", "username", [
-				"id" => $id
-			])[0];
-		}
-	}
-
+	
+	/**
+	 * Global Payload
+	 */
 	public function payload()
 	{
 
